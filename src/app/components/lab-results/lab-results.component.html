@@ -2,27 +2,31 @@
 
 
         <table class="table">
-            <tbody *ngFor="#group of results.testGroups">
-                <tr>
-                    <td colspan="5">
-                        <h2>{{group.name}}</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Tests</th>
-                    <th>Datums</th>
-                    <th>Rezultāts</th>
-                    <th>References intervāls</th>
-                    <th>Vienības</th>
-                </tr>
-                <tr *ngFor="#test of group.tests">
-                    <td>{{test.lastValue.name}}</td>
-                    <td>{{test.lastValue.date}}</td>
-                    <td>{{test.lastValue.value}}</td>
-                    <td>{{test.lastValue.referenceInterval.minValue}} - {{test.lastValue.referenceInterval.maxValue}}</td>
-                    <td>{{test.lastValue.units}}</td>
-                </tr>
-            </tbody>
+            <template ngFor #group [ngForOf]="results.testGroups">
+                <thead>
+                    <tr>
+                        <td colspan="5">
+                            <h2>{{group.name}}</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Tests</th>
+                        <th>Datums</th>
+                        <th>Rezultāts</th>
+                        <th>References intervāls</th>
+                        <th>Vienības</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="#test of group.tests">
+                        <td>{{test.lastValue.name}}</td>
+                        <td>{{test.lastValue.date}}</td>
+                        <td>{{test.lastValue.value}}</td>
+                        <td>{{test.lastValue.referenceInterval.minValue}} - {{test.lastValue.referenceInterval.maxValue}}</td>
+                        <td>{{test.lastValue.units}}</td>
+                    </tr>
+                </tbody>
+            </template>
         </table>
 </ul>
 
