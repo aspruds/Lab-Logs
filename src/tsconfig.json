@@ -1,0 +1,16 @@
+{
+  "version": "1.7.3",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "module": "commonjs",
+    "removeComments": true,
+    "sourceMap": true,
+    "sourceRoot": ".",
+    "rootDir": "."
+  },
+  "exclude": [
+      "node_modules"
+  ]
+}

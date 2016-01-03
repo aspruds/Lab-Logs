@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+
+    <!-- Put your css files here to have them load in development. In production they will be concated together. -->
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- endbuild -->
+
+</head>
+    <body>
+        <my-app class="my-app">Ielādē aplikāciju...</my-app>
+
+        <!-- These are the necessary angular2 development files. Don't put your own files here or they won't be included in production. -->
+        <!-- build:js -->
+        <script src="../node_modules/systemjs/dist/system.js"></script>
+        <script src="../node_modules/typescript/lib/typescript.js"></script>
+        <script src="../node_modules/angular2/bundles/angular2-polyfills.js"></script>
+        <script src="../node_modules/rxjs/bundles/Rx.js"></script>
+        <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+        <script src="../node_modules/angular2/bundles/router.dev.js"></script>
+        <script src="../node_modules/angular2/bundles/http.dev.js"></script>
+        <script>
+            System.config({
+                transpiler: 'typescript',
+                typescriptOptions: {emitDecoratorMetadata: true},
+                packages: {
+                    app: {
+                        defaultExtension: 'ts'
+                    }
+                }
+            });
+            System.import('app/boot')
+                    .then(null, console.error.bind(console));
+        </script>
+        <script src="http://localhost:35729/livereload.js"></script>
+        <!-- endbuild -->
+
+    </body>
+</html>

@@ -1,0 +1,15 @@
+.app-template {
+    padding-top: 0px;
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+nav.navbar {
+    display: none;
+}
