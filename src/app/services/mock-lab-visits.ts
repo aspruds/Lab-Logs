@@ -110,6 +110,96 @@ export var LAB_VISITS: LabVisit[] = [
                         }
                     },
                     {
+                        "name": "Neitrofīlie %",
+                        "value": 64.9,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 48,
+                            "maxValue": 72
+                        }
+                    },
+                    {
+                        "name": "Neitrofīlie abs.",
+                        "value": 5.44,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 1.92,
+                            "maxValue": 8.00
+                        }
+                    },
+                    {
+                        "name": "Eozinofīlie %",
+                        "value": 1.4,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 0.3,
+                            "maxValue": 5.4
+                        }
+                    },
+                    {
+                        "name": "Eozinofīlie abs.",
+                        "value": 0.12,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.02,
+                            "maxValue": 0.53
+                        }
+                    },
+                    {
+                        "name": "Bazofīlie %",
+                        "value": 0.12,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 0.7,
+                            "maxValue": 2.0
+                        }
+                    },
+                    {
+                        "name": "Bazofīlie abs.",
+                        "value": 0.06,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.00,
+                            "maxValue": 0.20
+                        }
+                    },
+                    {
+                        "name": "Limfocīti %",
+                        "value": 24.7,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 18.0,
+                            "maxValue": 42.0
+                        }
+                    },
+                    {
+                        "name": "Limfocīti abs.",
+                        "value": 2.07,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.72,
+                            "maxValue": 4.00
+                        }
+                    },
+                    {
+                        "name": "Monocīti %",
+                        "value": 8.3,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 2.0,
+                            "maxValue": 11.0
+                        }
+                    },
+                    {
+                        "name": "Monocīti abs.",
+                        "value": 0.70,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.08,
+                            "maxValue": 1.21
+                        }
+                    },
+                    {
                         "name": "EGĀ (kapilārās fotometrijas metode)",
                         "value": 4,
                         "units": "mm/h",
