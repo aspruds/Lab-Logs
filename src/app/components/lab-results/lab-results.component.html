@@ -22,7 +22,14 @@
                         <td>{{test.lastValue.name}}</td>
                         <td>{{test.lastValue.date}}</td>
                         <td>{{test.lastValue.value}}</td>
-                        <td>{{test.lastValue.referenceInterval.minValue}} - {{test.lastValue.referenceInterval.maxValue}}</td>
+                        <td>
+                            <span *ngIf="test.lastValue.referenceInterval">
+                                {{test.lastValue.referenceInterval.minValue}} - {{test.lastValue.referenceInterval.maxValue}}
+                            </span>
+                            <span *ngIf="test.lastValue.referenceValue !== undefined">
+                                {{test.lastValue.referenceValue}}
+                            </span>
+                        </td>
                         <td>{{test.lastValue.units}}</td>
                     </tr>
                 </tbody>

@@ -1,4 +1,4 @@
 export interface ReferenceInterval {
-    minValue: number;
-    maxValue: number;
+    minValue?: number;
+    maxValue?: number;
 }

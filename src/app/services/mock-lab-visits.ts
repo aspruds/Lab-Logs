@@ -17,6 +17,254 @@ export var LAB_VISITS: LabVisit[] = [
             "personalId": "210978-12311"
         },
         "sender": {
+            "name": "Veselības centrs 4, SIA"
+        },
+        "laboratory": {
+            name: "E. Gulbja Laboratorija",
+            address: "Zemitāna laukums 13, Rīga, LV 1006"
+        },
+        "doctor": {
+            "name": "Elita Adijāne"
+        },
+        "material": {
+            "dateTested": "2011-11-17T12:44:00Z",
+            "type": "blood"
+        },
+        tests: [
+            {
+                "name": "Alerģijas diagnostika",
+                "tests": [
+                    {
+                        "name": "Pārtikas panelis",
+                        "value": 4.50,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        },
+                        comments: "Olas baltums, piens, kvieši, menca, zemes rieksti, soja"
+                    },
+                    {
+                        "name": "Tomāti",
+                        "value": 0.56,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Cūkas gaļa",
+                        "value": 0.10,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Liellopu gaļa",
+                        "value": 0.10,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Burkāni",
+                        "value": 0.10,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Kazeīns",
+                        "value": 0.10,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Inhalācijas alergēni",
+                        "value": true,
+                        "referenceValue": false,
+                        "comments": "MŅjas putekļu ērcīte , kaķa epitēlijs, suņa spalva, bermuda zāle, timotiņš, penicilīna pelējums, altenārijas pelējums, bērzs, japānas ciedrs ,anglijas platāna"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "patient": {
+            "name": "Andris Sprūds",
+            "sex": "male",
+            "dateOfBirth": "1978-09-21",
+            "personalId": "210978-12311"
+        },
+        "sender": {
+            "name": "Veselības centrs 4, Estētiskā dermatoloģijas klīnika"
+        },
+        "laboratory": {
+            name: "Medicīnas centrs \"Veselibas Centrs - 4\" Testēšanas laboratorija",
+            address: "K.Barona 117, Rīga LV1012"
+        },
+        "doctor": {
+            "name": "Inga Žīgure"
+        },
+        "material": {
+            "dateTested": "2014-02-27T12:52:00Z",
+            "type": "blood"
+        },
+        "technicians": {
+            "testedBy": "Baltiņa Evija, Salmiņa Liāna",
+            "collectedBy": "Liene Lorenca",
+            "qualityControlledBy": "Vita Ščepetova"
+        },
+        tests: [
+            {
+                "name": "Klīniskā ķīmija",
+                "tests": [
+                    {
+                        "name": "ALAT",
+                        "value": 20.3,
+                        "units": "U/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 45
+                        }
+                    },
+                    {
+                        "name": "ASAT",
+                        "value": 20.6,
+                        "units": "U/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 35
+                        }
+                    },
+                    {
+                        "name": "Gamma-glutamil-transferāse - Kokrofta-Golta kalkulācija, svars 58 kg",
+                        "value": 14.9,
+                        "units": "U/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 55
+                        }
+                    },
+                    {
+                        "name": "Glikoze",
+                        "value": 5.22,
+                        "units": "mmol/L",
+                        "referenceInterval": {
+                            "minValue": 4.10,
+                            "maxValue": 5.90
+                        }
+                    },
+                    {
+                        "name": "Kopējais olbaltums",
+                        "value": 77.8,
+                        "units": "g/L",
+                        "referenceInterval": {
+                            "minValue": 64.00,
+                            "maxValue": 83.00
+                        }
+                    },
+                    {
+                        "name": "Kopējais holesterīns",
+                        "value": 5.73,
+                        "units": "mmol/L",
+                        "referenceInterval": {
+                            "minValue": 0.50,
+                            "maxValue": 5.60
+                        }
+                    },
+                    {
+                        "name": "ABL-holesterīns",
+                        "value": 1.54,
+                        "units": "mmol/L",
+                        "referenceInterval": {
+                            "minValue": 0.90,
+                            "maxValue": 1.54
+                        }
+                    },
+                    {
+                        "name": "ZBL-holesterīns",
+                        "value": 3.86,
+                        "units": "mmol/L",
+                        "referenceInterval": {
+                            "minValue": 0.00,
+                            "maxValue": 3.37
+                        },
+                        comments: "Riska robeža: 3.37-4.12 mmol/L, augsta riska robeža >=4.13 mmol/L"
+                    },
+                    {
+                        "name": "Triglicerīdi",
+                        "value": 0.72,
+                        "units": "mmol/L",
+                        "referenceInterval": {
+                            "minValue": 0.00,
+                            "maxValue": 1.70
+                        }
+                    },
+                    {
+                        "name": "Bilirubīns",
+                        "value": 15.56,
+                        "units": "mkmol/L",
+                        "referenceInterval": {
+                            "minValue": 5.00,
+                            "maxValue": 21.00
+                        }
+                    },
+                    {
+                        "name": "Alfa amilāze",
+                        "value": 74.34,
+                        "units": "U/L",
+                        "referenceInterval": {
+                            "minValue": 22,
+                            "maxValue": 80
+                        }
+                    },
+                    {
+                        "name": "Ferritīns",
+                        "value": 105.9,
+                        "units": "ng/mL",
+                        "referenceInterval": {
+                            "minValue": 20,
+                            "maxValue": 300
+                        }
+                    },
+                    {
+                        "name": "SED",
+                        "value": false,
+                        "referenceValue": false
+                    },
+                    {
+                        "name": "Hepatīta BsAg",
+                        "value": false,
+                        "referenceValue": false
+                    },
+                    {
+                        "name": "Anti-HCV (Hepatīts C)",
+                        "value": false,
+                        "referenceValue": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "patient": {
+            "name": "Andris Sprūds",
+            "sex": "male",
+            "dateOfBirth": "1978-09-21",
+            "personalId": "210978-12311"
+        },
+        "sender": {
             "name": "Veselības centrs 4, Estētiskā dermatoloģijas klīnika"
         },
         "laboratory": {
@@ -110,6 +358,20 @@ export var LAB_VISITS: LabVisit[] = [
                         }
                     },
                     {
+                        "name": "EGĀ (kapilārās fotometrijas metode)",
+                        "value": 4,
+                        "units": "mm/h",
+                        "referenceInterval": {
+                            "minValue": 1,
+                            "maxValue": 15
+                        }
+                    }
+                ]
+            },
+            {
+				"name": "Leikocītu diferencēts skaits",
+				"tests": [
+                    {
                         "name": "Neitrofīlie %",
                         "value": 64.9,
                         "units": "%",
@@ -198,17 +460,8 @@ export var LAB_VISITS: LabVisit[] = [
                             "minValue": 0.08,
                             "maxValue": 1.21
                         }
-                    },
-                    {
-                        "name": "EGĀ (kapilārās fotometrijas metode)",
-                        "value": 4,
-                        "units": "mm/h",
-                        "referenceInterval": {
-                            "minValue": 1,
-                            "maxValue": 15
-                        }
-                    }
-                ]
+                    },				
+				]
             },
             {
                 "name": "Klīniskā ķīmija",

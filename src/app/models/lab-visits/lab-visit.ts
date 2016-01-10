@@ -13,6 +13,6 @@ export interface LabVisit {
     laboratory: Laboratory;
     doctor: Doctor;
     material: Material;
-    technicians: Technicians;
+    technicians?: Technicians;
     tests: TestGroup[];
 }

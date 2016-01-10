@@ -1,6 +1,5 @@
 import {Component, View} from 'angular2/core'
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router'
-import {DashboardComponent} from './../../components/dashboard/dashboard.component'
 import {Route} from "angular2/router";
 import {LabResultsComponent} from "../lab-results/lab-results.component";
 
