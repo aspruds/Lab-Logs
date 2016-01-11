@@ -17,6 +17,565 @@ export var LAB_VISITS: LabVisit[] = [
             "personalId": "210978-12311"
         },
         "sender": {
+            "name": "Veselības centrs 4, Estētiskā dermatoloģijas klīnika"
+        },
+        "laboratory": {
+            name: "E. Gulbja Laboratorija",
+            address: "Zemitāna laukums 13, Rīga, LV 1006"
+        },
+        "doctor": {
+            "name": "Dr. Kristīne Cīrule"
+        },
+        "material": {
+            "dateTested": "2013-10-10T15:31:00Z",
+            "type": "blood"
+        },
+        "technicians": {
+            "qualityControlledBy": "Viktorija Priedīte"
+        },
+        "tests": [
+            {
+                "name": "Alerģiju diagnostika: IgE Inhalācija 30",
+                "tests": [
+                    {
+                        "name": "CCD1, CCD2, CCD3 mix",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Derm.pteronyssinus",
+                        "value": 0.16,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Derm.farinae",
+                        "value": 0.51,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Prusaks 0.13",
+                        "value": 0.13,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Bērzs",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Alksnis",
+                        "value": 0.16,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Lazda",
+                        "value": 0.06,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Jaukta zāle",
+                        "value": 3.99,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Rudzu putekšņi",
+                        "value": 0.6,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Vērmele",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Kumelītes ziedi",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Bišu inde",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Lapseņu inde",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Latekss",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Penicillium notatum",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Cladosporium herbarum",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Aspergillus fumigatus",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Alternaria alternata",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Kaķis",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Zirgs",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Suns",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Jūrascūciņa",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Kāmis",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Trusis",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Pele",
+                        "value": 0.06,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Žurka",
+                        "value": 0.16,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Papagailis",
+                        "value": 0.16,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Pienene",
+                        "value": 0.29,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Acarus siro",
+                        "value": 0.91,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Alerģiju diagnostika: IgE Pārtika 30",
+                "tests": [
+                    {
+                        "name": "CCD1, CCD2, CCD3 mix",
+                        "value": 0.05,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Staphylokoki",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Zemesrieksti",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Kokosrieksti",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Menca",
+                        "value": 2.46,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Lasis",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Griķi",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Auzu milti",
+                        "value": 0.1,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Kukurūza",
+                        "value": 0.12,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Burkāni",
+                        "value": 0.10,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Selerijas",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Āboli",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Apelsīni",
+                        "value": 0.05,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Liellopa gaļa",
+                        "value": 0.12,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Cūkgaļa",
+                        "value": 0.15,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Vistas gaļa",
+                        "value": 0.12,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Kartupeļi",
+                        "value": 0.10,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Kviešu milti",
+                        "value": 0.12,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Rudzu milti",
+                        "value": 0.00,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Tomāti",
+                        "value": 0.00,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Saldie pipari",
+                        "value": 0.24,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Banāni",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Olas baltums",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Olas dzeltenums",
+                        "value": 0.00,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Piens",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Alfa-laktalbumīns",
+                        "value": 0.02,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Beta-laktoglobulīns",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Kazeīns",
+                        "value": 0,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    },
+                    {
+                        "name": "Sojas pupiņas",
+                        "value": 0.1,
+                        "units": "kU/L",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.35
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "patient": {
+            "name": "Andris Sprūds",
+            "sex": "male",
+            "dateOfBirth": "1978-09-21",
+            "personalId": "210978-12311"
+        },
+        "sender": {
             "name": "Veselības centrs 4, SIA"
         },
         "laboratory": {
@@ -93,7 +652,7 @@ export var LAB_VISITS: LabVisit[] = [
                         "name": "Inhalācijas alergēni",
                         "value": true,
                         "referenceValue": false,
-                        "comments": "MŅjas putekļu ērcīte , kaķa epitēlijs, suņa spalva, bermuda zāle, timotiņš, penicilīna pelējums, altenārijas pelējums, bērzs, japānas ciedrs ,anglijas platāna"
+                        "comments": "Mājas putekļu ērcīte , kaķa epitēlijs, suņa spalva, bermuda zāle, timotiņš, penicilīna pelējums, altenārijas pelējums, bērzs, japānas ciedrs ,anglijas platāna"
                     }
                 ]
             }
