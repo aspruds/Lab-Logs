@@ -1,28 +1,41 @@
-<ul class="results" *ngIf="results">
-
-
-        <table class="table">
-            <template ngFor #group [ngForOf]="results.testGroups">
-                <thead>
+<div class="container">
+    <h1>Laboratorijas testu rezultāti</h1>
+    <ol class="breadcrumb">
+        <li class="active">Laboratorija</li>
+        <li class="active">Rezultāti</li>
+    </ol>
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" [routerActive]="active"><a [routerLink]="['../LabResults']">Rezultāti</a></li>
+                <li role="presentation" [routerActive]="active"><a [routerLink]="['../LabVisits']">Apmeklējumi</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <table class="table results" *ngIf="results">
+                <template ngFor #group [ngForOf]="results.testGroups" #idx="index">
+                    <thead>
                     <tr>
                         <td colspan="5">
-                            <h2>{{group.name}}</h2>
+                            <h2 [class.following]="idx > 0">{{group.name}}</h2>
                         </td>
                     </tr>
                     <tr>
                         <th>Tests</th>
                         <th>Datums</th>
                         <th>Rezultāts</th>
-                        <th>References intervāls</th>
+                        <th *ngIf="group.hasLevels">Līmenis</th>
+                        <th *ngIf="group.hasLevels === undefined">References intervāls</th>
                         <th>Vienības</th>
                     </tr>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     <tr *ngFor="#test of group.tests">
                         <td>{{test.lastValue.name}}</td>
                         <td>{{test.lastValue.date}}</td>
                         <td>{{test.lastValue.value}}</td>
-                        <td>
+                        <td *ngIf="group.hasLevels && test.lastValue.level !== undefined">{{test.lastValue.level}}</td>
+                        <td *ngIf="group.hasLevels === undefined">
                             <span *ngIf="test.lastValue.referenceInterval">
                                 {{test.lastValue.referenceInterval.minValue}} - {{test.lastValue.referenceInterval.maxValue}}
                             </span>
@@ -32,8 +45,10 @@
                         </td>
                         <td>{{test.lastValue.units}}</td>
                     </tr>
-                </tbody>
-            </template>
-        </table>
-</ul>
+                    </tbody>
+                </template>
+            </table>
+        </div>
+    </div>
+</div>
 

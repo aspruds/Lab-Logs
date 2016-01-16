@@ -1,6 +1,10 @@
-.results {list-style-type: none; margin-left: 1em; padding: 0;}
 
-.results table {
+table.results h2 {
+    margin-top: 0; padding: 0;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.2em;
+    font-size: 2em;
+}
+
+table.results h2.following {
+    margin-top: 1em;
 }

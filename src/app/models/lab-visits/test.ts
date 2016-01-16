@@ -7,4 +7,5 @@ export interface Test {
     referenceInterval?: ReferenceInterval;
     referenceValue?: boolean;
     comments?: string;
+    level?: number;
 }

@@ -7,6 +7,7 @@ import {Material} from "./../models/lab-visits/material";
 import {Technicians} from "./../models/lab-visits/technicians";
 import {Test} from "./../models/lab-visits/test";
 import {ReferenceInterval} from "../models/lab-visits/reference-interval";
+import moment = require("moment")
 
 export var LAB_VISITS: LabVisit[] = [
     {
@@ -36,6 +37,7 @@ export var LAB_VISITS: LabVisit[] = [
         "tests": [
             {
                 "name": "Alerģiju diagnostika: IgE Inhalācija 30",
+                "hasLevels": true,
                 "tests": [
                     {
                         "name": "CCD1, CCD2, CCD3 mix",
@@ -44,7 +46,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Derm.pteronyssinus",
@@ -53,7 +56,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Derm.farinae",
@@ -62,7 +66,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 1
                     },
                     {
                         "name": "Prusaks 0.13",
@@ -71,7 +76,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Bērzs",
@@ -80,7 +86,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Alksnis",
@@ -89,7 +96,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Lazda",
@@ -98,7 +106,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Jaukta zāle",
@@ -107,7 +116,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 3
                     },
                     {
                         "name": "Rudzu putekšņi",
@@ -116,7 +126,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 1
                     },
                     {
                         "name": "Vērmele",
@@ -125,7 +136,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Kumelītes ziedi",
@@ -134,7 +146,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Bišu inde",
@@ -143,7 +156,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Lapseņu inde",
@@ -152,7 +166,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Latekss",
@@ -161,7 +176,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Penicillium notatum",
@@ -170,7 +186,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Cladosporium herbarum",
@@ -179,7 +196,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Aspergillus fumigatus",
@@ -188,7 +206,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Alternaria alternata",
@@ -197,7 +216,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Kaķis",
@@ -206,7 +226,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Zirgs",
@@ -215,7 +236,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Suns",
@@ -224,7 +246,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Jūrascūciņa",
@@ -233,7 +256,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Kāmis",
@@ -242,7 +266,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Trusis",
@@ -251,7 +276,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Pele",
@@ -260,7 +286,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Žurka",
@@ -269,7 +296,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Papagailis",
@@ -278,7 +306,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Pienene",
@@ -287,7 +316,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Acarus siro",
@@ -296,12 +326,14 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 1
                     }
                 ]
             },
             {
                 "name": "Alerģiju diagnostika: IgE Pārtika 30",
+                "hasLevels": true,
                 "tests": [
                     {
                         "name": "CCD1, CCD2, CCD3 mix",
@@ -310,7 +342,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Staphylokoki",
@@ -319,7 +352,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Zemesrieksti",
@@ -328,7 +362,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Kokosrieksti",
@@ -337,7 +372,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Menca",
@@ -346,7 +382,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 2
                     },
                     {
                         "name": "Lasis",
@@ -355,7 +392,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Griķi",
@@ -364,7 +402,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Auzu milti",
@@ -373,7 +412,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Kukurūza",
@@ -382,7 +422,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Burkāni",
@@ -391,7 +432,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Selerijas",
@@ -400,7 +442,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Āboli",
@@ -409,7 +452,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Apelsīni",
@@ -418,7 +462,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Liellopa gaļa",
@@ -427,7 +472,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Cūkgaļa",
@@ -436,7 +482,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Vistas gaļa",
@@ -445,7 +492,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Kartupeļi",
@@ -454,7 +502,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Kviešu milti",
@@ -463,7 +512,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Rudzu milti",
@@ -472,7 +522,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Tomāti",
@@ -481,7 +532,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Saldie pipari",
@@ -490,7 +542,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Banāni",
@@ -499,7 +552,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Olas baltums",
@@ -508,7 +562,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Olas dzeltenums",
@@ -517,7 +572,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Piens",
@@ -526,7 +582,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Alfa-laktalbumīns",
@@ -535,7 +592,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Beta-laktoglobulīns",
@@ -544,7 +602,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Kazeīns",
@@ -553,7 +612,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Sojas pupiņas",
@@ -562,7 +622,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     }
                 ]
             }
@@ -592,6 +653,7 @@ export var LAB_VISITS: LabVisit[] = [
         tests: [
             {
                 "name": "Alerģijas diagnostika",
+                "hasLevels": true,
                 "tests": [
                     {
                         "name": "Pārtikas panelis",
@@ -601,6 +663,7 @@ export var LAB_VISITS: LabVisit[] = [
                             "minValue": 0,
                             "maxValue": 0.35
                         },
+                        "level": 3,
                         comments: "Olas baltums, piens, kvieši, menca, zemes rieksti, soja"
                     },
                     {
@@ -610,7 +673,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 1
                     },
                     {
                         "name": "Cūkas gaļa",
@@ -619,7 +683,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Liellopu gaļa",
@@ -628,7 +693,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Burkāni",
@@ -637,7 +703,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Kazeīns",
@@ -646,7 +713,8 @@ export var LAB_VISITS: LabVisit[] = [
                         "referenceInterval": {
                             "minValue": 0,
                             "maxValue": 0.35
-                        }
+                        },
+                        "level": 0
                     },
                     {
                         "name": "Inhalācijas alergēni",

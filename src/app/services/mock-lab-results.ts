@@ -13,6 +13,7 @@ export var LAB_RESULTS:LabResults = {
 
         return {
             "name": group.name,
+            "hasLevels": group.hasLevels,
             "tests": group.tests.map(function(test) {
                 let testWithDate: any = test;
                 testWithDate.date = date;

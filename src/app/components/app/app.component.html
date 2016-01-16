@@ -11,18 +11,18 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">{{navigationTitle}}</a></li>
+                    <li class="dropdown" class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Laboratorija <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation" [routerActive]="ho"><a [routerLink]="['./LabResults']">Rezultāti</a></li>
+                            <li role="presentation" [routerActive]="hi"><a [routerLink]="['./LabVisits']">Apmeklējumi</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-
-    <div class="container">
-        <h1>{{title}}</h1>
-        <!--
-        <a [routerLink]="['Dashboard']">Dashboard</a>
-        <a [routerLink]="['Heroes']">Heroes</a>
-        -->
+    <div class="container page-container">
         <router-outlet></router-outlet>
     </div>
 </div>

@@ -1,5 +1,5 @@
 .app-template {
-    padding-top: 0px;
+    padding-top: 55px;
 }
 
 h1 {
@@ -8,8 +8,4 @@ h1 {
 
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
-}
-
-nav.navbar {
-    display: none;
 }
