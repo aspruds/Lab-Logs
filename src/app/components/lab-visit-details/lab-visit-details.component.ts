@@ -11,10 +11,12 @@ import {RouteParams} from "angular2/router";
     selector: 'lab-tests',
     directives: [ROUTER_DIRECTIVES, LabMenuComponent],
     templateUrl: 'app/components/lab-visit-details/lab-visit-details.component.html',
-    styleUrls: ['app/components/lab-visit-details/lab-visit-details.component.css']
+    styleUrls: ['app/components/lab-visit-details/lab-visit-details.component.css'],
+    inputs: ['showProperties']
 })
 export class LabVisitDetailsComponent implements OnInit {
     public visit: LabVisit;
+    public propertiesVisible: boolean = false;
 
     constructor(private labVisitsService:LabVisitsService, private router: Router, private routeParams: RouteParams) {
     }
@@ -24,6 +26,14 @@ export class LabVisitDetailsComponent implements OnInit {
             let id = +this.routeParams.get('id');
             this.labVisitsService.getVisitDetails(id).then(visit => this.visit = visit);
         }
+    }
+
+    showProperties() {
+        this.propertiesVisible = true;
+    }
+
+    hideProperties() {
+        this.propertiesVisible = false;
     }
 
     goBack() {

@@ -1,7 +1,7 @@
 <div class="container">
     <h1>Laboratorijas testu rezultāti</h1>
     <ol class="breadcrumb">
-        <li class="active">Laboratorija</li>
+        <li><a [routerLink]="['/LabResults']">Laboratorija</a></li>
         <li class="active">Rezultāti</li>
     </ol>
     <div class="row">
@@ -12,7 +12,7 @@
                     <thead>
                     <tr>
                         <td colspan="5">
-                            <h3 [class.following]="idx > 0"><span class="label label-primary">{{group.name}}</span></h3>
+                            <h3 [class.following]="idx > 0">{{group.name}}</h3>
                         </td>
                     </tr>
                     <tr>
