@@ -1,31 +1,28 @@
 import {LabVisit} from "./../models/lab-visits/lab-visit";
 import {Patient} from "./../models/lab-visits/patient";
-import {Sender} from "./../models/lab-visits/sender";
 import {Laboratory} from "./../models/lab-visits/laboratory";
 import {Doctor} from "./../models/lab-visits/doctor";
 import {Material} from "./../models/lab-visits/material";
 import {Technicians} from "./../models/lab-visits/technicians";
 import {Test} from "./../models/lab-visits/test";
 import {ReferenceInterval} from "../models/lab-visits/reference-interval";
-import moment = require("moment")
 
 export var LAB_VISITS: LabVisit[] = [
     {
+        "id": 1,
         "patient": {
             "name": "Andris Sprūds",
             "sex": "male",
             "dateOfBirth": "1978-09-21",
             "personalId": "210978-12311"
         },
-        "sender": {
-            "name": "Veselības centrs 4, Estētiskā dermatoloģijas klīnika"
-        },
         "laboratory": {
             name: "E. Gulbja Laboratorija",
             address: "Zemitāna laukums 13, Rīga, LV 1006"
         },
         "doctor": {
-            "name": "Dr. Kristīne Cīrule"
+            "name": "Dr. Kristīne Cīrule",
+            "clinic": "Veselības centrs 4, Estētiskā dermatoloģijas klīnika"
         },
         "material": {
             "dateTested": "2013-10-10T15:31:00Z",
@@ -34,7 +31,7 @@ export var LAB_VISITS: LabVisit[] = [
         "technicians": {
             "qualityControlledBy": "Viktorija Priedīte"
         },
-        "tests": [
+        "testGroups": [
             {
                 "name": "Alerģiju diagnostika: IgE Inhalācija 30",
                 "hasLevels": true,
@@ -630,27 +627,26 @@ export var LAB_VISITS: LabVisit[] = [
         ]
     },
     {
+        "id": 2,
         "patient": {
             "name": "Andris Sprūds",
             "sex": "male",
             "dateOfBirth": "1978-09-21",
             "personalId": "210978-12311"
         },
-        "sender": {
-            "name": "Veselības centrs 4, SIA"
-        },
         "laboratory": {
             name: "E. Gulbja Laboratorija",
             address: "Zemitāna laukums 13, Rīga, LV 1006"
         },
         "doctor": {
-            "name": "Elita Adijāne"
+            "name": "Elita Adijāne",
+            "clinic": "Veselības centrs 4, SIA"
         },
         "material": {
             "dateTested": "2011-11-17T12:44:00Z",
             "type": "blood"
         },
-        tests: [
+        "testGroups": [
             {
                 "name": "Alerģijas diagnostika",
                 "hasLevels": true,
@@ -727,21 +723,20 @@ export var LAB_VISITS: LabVisit[] = [
         ]
     },
     {
+        "id": 3,
         "patient": {
             "name": "Andris Sprūds",
             "sex": "male",
             "dateOfBirth": "1978-09-21",
             "personalId": "210978-12311"
         },
-        "sender": {
-            "name": "Veselības centrs 4, Estētiskā dermatoloģijas klīnika"
-        },
         "laboratory": {
             name: "Medicīnas centrs \"Veselibas Centrs - 4\" Testēšanas laboratorija",
             address: "K.Barona 117, Rīga LV1012"
         },
         "doctor": {
-            "name": "Inga Žīgure"
+            "name": "Inga Žīgure",
+            "clinic": "Veselības centrs 4, Estētiskā dermatoloģijas klīnika"
         },
         "material": {
             "dateTested": "2014-02-27T12:52:00Z",
@@ -752,7 +747,7 @@ export var LAB_VISITS: LabVisit[] = [
             "collectedBy": "Liene Lorenca",
             "qualityControlledBy": "Vita Ščepetova"
         },
-        tests: [
+        "testGroups": [
             {
                 "name": "Klīniskā ķīmija",
                 "tests": [
@@ -885,21 +880,20 @@ export var LAB_VISITS: LabVisit[] = [
         ]
     },
     {
+        "id": 4,
         "patient": {
             "name": "Andris Sprūds",
             "sex": "male",
             "dateOfBirth": "1978-09-21",
             "personalId": "210978-12311"
         },
-        "sender": {
-            "name": "Veselības centrs 4, Estētiskā dermatoloģijas klīnika"
-        },
         "laboratory": {
             name: "E. Gulbja Laboratorija",
             address: "Zemitāna laukums 13, Rīga, LV 1006"
         },
         "doctor": {
-            "name": "Dr. Kristīne Cīrule"
+            "name": "Dr. Kristīne Cīrule",
+            "clinic": "Veselības centrs 4, Estētiskā dermatoloģijas klīnika"
         },
         "material": {
             "dateTested": "2013-10-10T15:11:00Z",
@@ -908,7 +902,7 @@ export var LAB_VISITS: LabVisit[] = [
         "technicians": {
             "qualityControlledBy": "Dr. Inga Plūme"
         },
-        "tests": [
+        "testGroups": [
             {
                 "name": "Hematoloģija",
                 "tests": [
@@ -1087,7 +1081,7 @@ export var LAB_VISITS: LabVisit[] = [
                             "minValue": 0.08,
                             "maxValue": 1.21
                         }
-                    },				
+                    },
 				]
             },
             {

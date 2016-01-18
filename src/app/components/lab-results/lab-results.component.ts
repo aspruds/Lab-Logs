@@ -1,4 +1,5 @@
 import {Component,OnInit} from 'angular2/core'
+import {LabMenuComponent} from "../lab-menu/lab-menu.component";
 import {RouterActive} from "../../directives/router_active";
 import {LabResults} from "../../models/lab-results/lab-results";
 import {LabResultsService} from "../../services/lab-results.service";
@@ -7,7 +8,7 @@ import {Router} from 'angular2/router'
 
 @Component({
     selector: 'lab-tests',
-    directives: [ROUTER_DIRECTIVES, RouterActive],
+    directives: [ROUTER_DIRECTIVES, LabMenuComponent],
     templateUrl: 'app/components/lab-results/lab-results.component.html',
     styleUrls: ['app/components/lab-results/lab-results.component.css'],
     inputs: ['groupId']

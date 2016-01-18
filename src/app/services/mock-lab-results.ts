@@ -8,7 +8,7 @@ import {LAB_VISITS} from "./mock-lab-visits"
 let firstLabVisits = LAB_VISITS[0];
 
 export var LAB_RESULTS:LabResults = {
-    "testGroups": firstLabVisits.tests.map(function(group) {
+    "testGroups": firstLabVisits.testGroups.map(function(group) {
         let date = firstLabVisits.material.dateTested;
 
         return {

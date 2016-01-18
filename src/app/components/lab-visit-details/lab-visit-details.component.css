@@ -1,0 +1,29 @@
+.lab-visit-details h2 {
+    margin-top: 0; padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+}
+
+.lab-visit-details div.title {
+    padding-top:1.5em;
+    padding-bottom: 1.5em;
+}
+
+.lab-visit-details div.title h3 {
+    font-weight: bold;
+}
+
+.lab-visit-details div.visit h3 {
+    margin-top: 0; padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+}
+
+.lab-visit-details div.visit h3.following {
+    margin-top: 1em;
+}
+
+.lab-visit-details div.return-link {
+    margin-bottom: 3em;
+}
+

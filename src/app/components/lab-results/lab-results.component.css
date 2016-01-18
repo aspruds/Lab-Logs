@@ -1,10 +1,10 @@
 
-table.results h2 {
+table.results h3 {
     margin-top: 0; padding: 0;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2em;
 }
 
-table.results h2.following {
+table.results h3.following {
     margin-top: 1em;
 }

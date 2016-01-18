@@ -4,6 +4,7 @@ import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router'
 import {Route} from "angular2/router";
 import {LabResultsComponent} from "../lab-results/lab-results.component";
 import {LabVisitsComponent} from "../lab-visits/lab-visits.component";
+import {LabVisitDetailsComponent} from "../lab-visit-details/lab-visit-details.component";
 import {Router} from "angular2/router";
 
 @Component({
@@ -13,8 +14,8 @@ import {Router} from "angular2/router";
     templateUrl: 'app/components/app/app.component.html'
 })
 @RouteConfig([
-   {path: '/', component: LabResultsComponent, as: "LabResults"},
-   {path: '/lab/visits', component: LabVisitsComponent, as: "LabVisits", useAsDefault: true}
+   {path: 'lab/results', component: LabResultsComponent, as: "LabResults", useAsDefault: true},
+   {path: 'lab/visits/...', component: LabVisitsComponent, as: "LabVisits"}
 ])
 export class AppComponent {
     public navigationTitle = 'Rezultāti';

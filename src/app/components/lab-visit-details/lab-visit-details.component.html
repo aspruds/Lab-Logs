@@ -1,0 +1,139 @@
+<div class="container lab-visit-details">
+    <h1>Apmeklējumi</h1>
+    <ol class="breadcrumb">
+        <li class="active">Laboratorija</li>
+        <li class="active">Apmeklējumi</li>
+        <li class="active">Detaļas</li>
+    </ol>
+    <div class="row">
+        <lab-menu></lab-menu>
+        <div class="col-md-9">
+            <h2>Detaļas</h2>
+            <div *ngIf="visit" class="visit">
+                <div class="row title">
+                    <div class="col-md-8"><h3>{{visit.laboratory.name}}</h3></div>
+                    <div class="col-md-4 text-right"><h3>{{visit.material.dateTested}}</h3></div>
+                </div>
+                <div class="row properties">
+                    <div class="col-md-12">
+                        <table class="table details">
+                            <thead>
+                            <tr>
+                                <th colspan="2"><h3>Laboratorija</h3></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Vārds</td>
+                                <td>{{visit.laboratory.name}}</td>
+                            </tr>
+                            <tr>
+                                <td>Adrese</td>
+                                <td>{{visit.laboratory.address}}</td>
+                            </tr>
+                            </tbody>
+                            <thead>
+                            <tr>
+                                <th colspan="2"><h3 class="following">Ārsts</h3></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Vārds</td>
+                                <td>{{visit.doctor.name}}</td>
+                            </tr>
+                            <tr>
+                                <td>Ārstniecības iestāde</td>
+                                <td>{{visit.doctor.clinic}}</td>
+                            </tr>
+                            </tbody>
+                            <thead>
+                            <tr>
+                                <th colspan="2"><h3 class="following">Pacients</h3></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Vārds</td>
+                                <td>{{visit.patient.name}}</td>
+                            </tr>
+                            <tr>
+                                <td>Dzimums</td>
+                                <td>{{visit.patient.sex}}</td>
+                            </tr>
+                            <tr>
+                                <td>Dzimšanas datums</td>
+                                <td>{{visit.patient.dateOfBirth}}</td>
+                            </tr>
+                            <tr>
+                                <td>Personas kods</td>
+                                <td>{{visit.patient.personalId}}</td>
+                            </tr>
+                            </tbody>
+                            <thead>
+                            <tr>
+                                <th colspan="2"><h3 class="following">Materiāls</h3></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Datums</td>
+                                <td>{{visit.material.dateTested}}</td>
+                            </tr>
+                            <tr>
+                                <td>Materiāla veids</td>
+                                <td>{{visit.material.type}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row results">
+                    <div class="col-md-12">
+                        <table class="table results">
+                            <template ngFor #group [ngForOf]="visit.testGroups" #idx="index">
+                                <thead>
+                                <tr>
+                                    <td colspan="5">
+                                        <h3 [class.following]="idx > 0"><span class="label label-primary">{{group.name}}</span></h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Tests</th>
+                                    <th>Datums</th>
+                                    <th>Rezultāts</th>
+                                    <th *ngIf="group.hasLevels">Līmenis</th>
+                                    <th *ngIf="group.hasLevels === undefined">References intervāls</th>
+                                    <th>Vienības</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="#test of group.tests">
+                                    <td>{{test.name}}</td>
+                                    <td>{{test.dateTested}}</td>
+                                    <td>{{test.value}}</td>
+                                    <td *ngIf="group.hasLevels && test.level !== undefined">{{test.level}}</td>
+                                    <td *ngIf="group.hasLevels === undefined">
+                                        <span *ngIf="test.referenceInterval">
+                                            {{test.referenceInterval.minValue}} - {{test.referenceInterval.maxValue}}
+                                        </span>
+                                        <span *ngIf="test.referenceValue !== undefined">
+                                            {{test.referenceValue}}
+                                        </span>
+                                    </td>
+                                    <td>{{test.units}}</td>
+                                </tr>
+                                </tbody>
+                            </template>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row return-link">
+                <div class="col-md-12">
+                    <button (click)="goBack()">Atpakaļ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

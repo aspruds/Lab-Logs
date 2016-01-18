@@ -1,3 +1,5 @@
-export interface  Doctor {
+export interface Doctor {
     name: string;
+    clinic: string;
+    address?: string;
 }

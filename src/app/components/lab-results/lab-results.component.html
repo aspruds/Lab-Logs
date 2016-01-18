@@ -5,19 +5,14 @@
         <li class="active">Rezultāti</li>
     </ol>
     <div class="row">
-        <div class="col-md-3">
-            <ul class="nav nav-pills nav-stacked">
-                <li role="presentation" [routerActive]="active"><a [routerLink]="['../LabResults']">Rezultāti</a></li>
-                <li role="presentation" [routerActive]="active"><a [routerLink]="['../LabVisits']">Apmeklējumi</a></li>
-            </ul>
-        </div>
+        <lab-menu></lab-menu>
         <div class="col-md-9">
             <table class="table results" *ngIf="results">
                 <template ngFor #group [ngForOf]="results.testGroups" #idx="index">
                     <thead>
                     <tr>
                         <td colspan="5">
-                            <h2 [class.following]="idx > 0">{{group.name}}</h2>
+                            <h3 [class.following]="idx > 0"><span class="label label-primary">{{group.name}}</span></h3>
                         </td>
                     </tr>
                     <tr>

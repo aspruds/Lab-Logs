@@ -1,0 +1,34 @@
+<div class="container">
+    <h1>Apmeklējumi</h1>
+    <ol class="breadcrumb">
+        <li class="active">Laboratorija</li>
+        <li class="active">Apmeklējumi</li>
+    </ol>
+    <div class="row">
+        <lab-menu></lab-menu>
+        <div class="col-md-9">
+            <table class="visits table" *ngIf="visits">
+                <thead>
+                <tr>
+                    <th>Laboratorija</th>
+                    <th>Datums</th>
+                    <th>Testi</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="#visit of visits">
+                    <td>
+                        <a [routerLink]="['Details', {id: visit.id}]">{{visit.laboratory.name}}</a>
+                    </td>
+                    <td>{{visit.material.dateTested}}</td>
+                    <td>
+                        <template ngFor #test [ngForOf]="visit.testGroups">
+                            <span class="label label-primary">{{test.name}}</span>&nbsp;
+                        </template>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
