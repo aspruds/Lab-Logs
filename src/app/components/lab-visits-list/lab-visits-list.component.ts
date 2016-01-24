@@ -11,12 +11,10 @@ import {RouteConfig} from "angular2/router";
     selector: 'lab-tests',
     directives: [ROUTER_DIRECTIVES, LabMenuComponent],
     templateUrl: 'app/components/lab-visits-list/lab-visits-list.component.html',
-    styleUrls: ['app/components/lab-visits-list/lab-visits-list.component.css'],
-    inputs: ['groupId']
+    styleUrls: ['app/components/lab-visits-list/lab-visits-list.component.css']
 })
 export class LabVisitsListComponent implements OnInit {
     public visits: LabVisit[];
-    public groupId:number;
 
     constructor(private labVisitsService:LabVisitsService, private router: Router) {
     }

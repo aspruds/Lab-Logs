@@ -33,7 +33,7 @@ export var LAB_VISITS: LabVisit[] = [
         },
         "testGroups": [
             {
-                "name": "Alerģiju diagnostika: IgE Inhalācija 30",
+                "name": "Alerģiju diagnostika: IgE Inhalācija",
                 "hasLevels": true,
                 "tests": [
                     {
@@ -67,7 +67,7 @@ export var LAB_VISITS: LabVisit[] = [
                         "level": 1
                     },
                     {
-                        "name": "Prusaks 0.13",
+                        "name": "Prusaks",
                         "value": 0.13,
                         "units": "kU/L",
                         "referenceInterval": {
@@ -329,7 +329,7 @@ export var LAB_VISITS: LabVisit[] = [
                 ]
             },
             {
-                "name": "Alerģiju diagnostika: IgE Pārtika 30",
+                "name": "Alerģiju diagnostika: IgE Pārtika",
                 "hasLevels": true,
                 "tests": [
                     {
@@ -648,7 +648,7 @@ export var LAB_VISITS: LabVisit[] = [
         },
         "testGroups": [
             {
-                "name": "Alerģijas diagnostika",
+                "name": "Alerģijas diagnostika: IgE Pārtika",
                 "hasLevels": true,
                 "tests": [
                     {
@@ -711,7 +711,13 @@ export var LAB_VISITS: LabVisit[] = [
                             "maxValue": 0.35
                         },
                         "level": 0
-                    },
+                    }
+                ]
+            },
+            {
+                "name": "Alerģijas diagnostika: IgE Inhalācija",
+                "hasLevels": true,
+                "tests": [
                     {
                         "name": "Inhalācijas alergēni",
                         "value": true,
@@ -736,7 +742,7 @@ export var LAB_VISITS: LabVisit[] = [
         },
         "doctor": {
             "name": "Inga Žīgure",
-            "clinic": "Veselības centrs 4, Estētiskā dermatoloģijas klīnika"
+            "clinic": "Veselības centrs 4"
         },
         "material": {
             "dateTested": "2014-02-27T12:52:00Z",
@@ -864,6 +870,15 @@ export var LAB_VISITS: LabVisit[] = [
                         "name": "SED",
                         "value": false,
                         "referenceValue": false
+                    },
+                    {
+                        "name": "TSH",
+                        "value": 1.25,
+                        "units": "uIU/mL",
+                        "referenceInterval": {
+                            "minValue": 0.3,
+                            "maxValue": 4
+                        }
                     },
                     {
                         "name": "Hepatīta BsAg",
@@ -1030,10 +1045,10 @@ export var LAB_VISITS: LabVisit[] = [
                     },
                     {
                         "name": "Bazofīlie %",
-                        "value": 0.12,
+                        "value": 0.7,
                         "units": "%",
                         "referenceInterval": {
-                            "minValue": 0.7,
+                            "minValue": 0,
                             "maxValue": 2.0
                         }
                     },
@@ -1145,6 +1160,809 @@ export var LAB_VISITS: LabVisit[] = [
                             "minValue": 0,
                             "maxValue": 12
                         }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "patient": {
+            "name": "Andris Sprūds",
+            "sex": "male",
+            "dateOfBirth": "1978-09-21",
+            "personalId": "210978-12311"
+        },
+        "laboratory": {
+            name: "Medicīnas centrs \"Veselibas Centrs - 4\" Testēšanas laboratorija",
+            address: "K.Barona 117, Rīga LV1012"
+        },
+        "doctor": {
+            "name": "Elita Adijāne",
+            "clinic": "Veselības centrs 4, Estētiskā dermatoloģijas klīnika"
+        },
+        "material": {
+            "dateTested": "2006-11-17T10:27:00Z",
+            "type": "blood"
+        },
+        "technicians": {
+            "qualityControlledBy": "Maira Sapata"
+        },
+        "testGroups": [
+            {
+                "name": "Alerģijas diagnostika",
+                "tests": [
+                    {
+                        "name": "Eozinofīlais katjonu proteīns (ECP)",
+                        "value": 57.10,
+                        "units": "ng/mL",
+                        "referenceInterval": {
+                            "minValue": 0.1,
+                            "maxValue": 24
+                        }
+                    },
+                    {
+                        "name": "Total IgE",
+                        "value": 47.8,
+                        "units": "IU/mL",
+                        "referenceInterval": {
+                            "minValue": 10,
+                            "maxValue": 120
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "patient": {
+            "name": "Andris Sprūds",
+            "sex": "male",
+            "dateOfBirth": "1978-09-21",
+            "personalId": "210978-12311"
+        },
+        "laboratory": {
+            name: "E. Gulbja Laboratorija",
+            address: "Zemitāna laukums 13, Rīga, LV 1006"
+        },
+        "doctor": {
+            "name": "Dr. Inga Žīgure",
+            "clinic": "Veselības centrs 4"
+        },
+        "material": {
+            "dateTested": "2013-04-03T10:49:00Z",
+            "type": "blood"
+        },
+        "technicians": {
+            "qualityControlledBy": "Sandra Šelkova"
+        },
+        "testGroups": [
+            {
+                "name": "Hematoloģija",
+                "tests": [
+                    {
+                        "name": "Eritrocīti",
+                        "value": 5.22,
+                        "referenceInterval": {
+                            "minValue": 4.5,
+                            "maxValue": 5.9
+                        },
+                        "units": "10x12/L"
+                    },
+                    {
+                        "name": "Hemoglobīns",
+                        "value": 156,
+                        "referenceInterval": {
+                            "minValue": 132,
+                            "maxValue": 175
+                        },
+                        "units": "g/L"
+                    },
+                    {
+                        "name": "Hematokrīts",
+                        "value": 48,
+                        "referenceInterval": {
+                            "minValue": 40,
+                            "maxValue": 51
+                        },
+                        "units": "%"
+                    },
+                    {
+                        "name": "MCV- vid. Er tilpums",
+                        "value": 92,
+                        "referenceInterval": {
+                            "minValue": 80,
+                            "maxValue": 100
+                        },
+                        "units": "fL"
+                    },
+                    {
+                        "name": "MCHC-vid. Hb konc. Er",
+                        "value": 320,
+                        "referenceInterval": {
+                            "minValue": 315,
+                            "maxValue": 360
+                        },
+                        "units": "pg"
+                    },
+                    {
+                        "name": "MCH-vidējā Hb konc.",
+                        "value": 30,
+                        "referenceInterval": {
+                            "minValue": 27,
+                            "maxValue": 33
+                        },
+                        "units": "g/L"
+                    },
+                    {
+                        "name": "RDW -Er. sadalījums",
+                        "value": 14,
+                        "referenceInterval": {
+                            "minValue": 11.5,
+                            "maxValue": 15.5
+                        },
+                        "units": "%"
+                    },
+                    {
+                        "name": "Trombocīti",
+                        "value": 232,
+                        "referenceInterval": {
+                            "minValue": 150,
+                            "maxValue": 410
+                        },
+                        "units": "10x9/L"
+                    },
+                    {
+                        "name": "Leikocīti",
+                        "value": 7.40,
+                        "referenceInterval": {
+                            "minValue": 4,
+                            "maxValue": 9.8
+                        },
+                        "units": "10x9/L"
+                    }
+                ]
+            },
+            {
+                "name": "Leikocītu diferencēts skaits",
+                "tests": [
+                    {
+                        "name": "Neitrofīlie %",
+                        "value": 49.3,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 48,
+                            "maxValue": 72
+                        }
+                    },
+                    {
+                        "name": "Neitrofīlie abs.",
+                        "value": 3.66,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 1.92,
+                            "maxValue": 8.00
+                        }
+                    },
+                    {
+                        "name": "Eozinofīlie %",
+                        "value": 2.2,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 0.3,
+                            "maxValue": 5.4
+                        }
+                    },
+                    {
+                        "name": "Eozinofīlie abs.",
+                        "value": 0.16,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.02,
+                            "maxValue": 0.53
+                        }
+                    },
+                    {
+                        "name": "Bazofīlie %",
+                        "value": 0.9,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 2.0
+                        }
+                    },
+                    {
+                        "name": "Bazofīlie abs.",
+                        "value": 0.07,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.00,
+                            "maxValue": 0.20
+                        }
+                    },
+                    {
+                        "name": "Limfocīti %",
+                        "value": 37.9,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 18.0,
+                            "maxValue": 42.0
+                        }
+                    },
+                    {
+                        "name": "Limfocīti abs.",
+                        "value": 2.81,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.72,
+                            "maxValue": 4.00
+                        }
+                    },
+                    {
+                        "name": "Monocīti %",
+                        "value": 9.7,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 2.0,
+                            "maxValue": 11.0
+                        }
+                    },
+                    {
+                        "name": "Monocīti abs.",
+                        "value": 0.72,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.08,
+                            "maxValue": 1.21
+                        }
+                    },
+                    {
+                        "name": "EGĀ (Kapilārās fotometrijas metode)",
+                        "value": 2,
+                        "units": "mm/h",
+                        "referenceInterval": {
+                            "minValue": 1,
+                            "maxValue": 15
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Klīniskā ķīmija",
+                "tests": [
+                    {
+                        "name": "Kreatinīns",
+                        "value": 62,
+                        "referenceInterval": {
+                            "minValue": 30,
+                            "maxValue": 106
+                        },
+                        "units": "μmol/L"
+                    },
+                    {
+                        "name": "Glomerulu filtrācijas ātrums",
+                        "value": 140,
+                        "referenceInterval": {
+                            "minValue": 90,
+                            "maxValue": 999
+                        },
+                        "units": "ml/min/1.73"
+                    },
+                    {
+                        "name": "Glikoze plazmā",
+                        "value": 5.50,
+                        "referenceInterval": {
+                            "minValue": 3.30,
+                            "maxValue": 5.89
+                        },
+                        "units": "mmol/L"
+                    },
+                    {
+                        "name": "Bilirubīns-kopējais",
+                        "value": 16.8,
+                        "referenceInterval": {
+                            "minValue": 1.1,
+                            "maxValue": 19
+                        },
+                        "units": "mmol/L"
+                    },
+                    {
+                        "name": "ALAT",
+                        "value": 31,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 37
+                        },
+                        "units": "U/L"
+                    },
+                    {
+                        "name": "ASAT",
+                        "value": 33,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 41
+                        },
+                        "units": "U/L"
+                    },
+                    {
+                        "name": "Kopējais holesterīns",
+                        "value": 6.14,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 5
+                        },
+                        "units": "mmol/L"
+                    },
+                    {
+                        "name": "Augsta blīvuma holesterīns",
+                        "value": 1.67,
+                        "referenceInterval": {
+                            "minValue": 1.10,
+                            "maxValue": 999
+                        },
+                        "units": "mmol/L"
+                    },
+                    {
+                        "name": "Zema blīvuma holesterīns",
+                        "value": 4.05,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 3
+                        },
+                        "units": "mmol/L"
+                    },
+                    {
+                        "name": "Triglicerīdi",
+                        "value": 0.58,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 2
+                        },
+                        "units": "mmol/L"
+                    }
+                ]
+            },
+            {
+                "name": "Hormoni",
+                "tests": [
+                    {
+                        "name": "TSH - Tireotropais hormons",
+                        "value": 1.1,
+                        "referenceInterval": {
+                            "minValue": 0.4,
+                            "maxValue": 4
+                        },
+                        "units": "mU/L"
+                    }
+                ]
+            },
+            {
+                "name": "Iekaisuma marķieri, autoantivielas",
+                "tests": [
+                    {
+                        "name": "CRO",
+                        "value": 0.8,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 8.0
+                        },
+                        "units": "mg/L"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "patient": {
+            "name": "Andris Sprūds",
+            "sex": "male",
+            "dateOfBirth": "1978-09-21",
+            "personalId": "210978-12311"
+        },
+        "laboratory": {
+            name: "Medicīnas centrs \"Veselibas Centrs - 4\" Testēšanas laboratorija",
+            address: "K.Barona 117, Rīga LV1012"
+        },
+        "doctor": {
+            "name": "Dr. Inga Žīgure",
+            "clinic": "Veselības centrs 4"
+        },
+        "material": {
+            "dateTested": "2014-08-20T11:26:00Z",
+            "type": "blood"
+        },
+        "technicians": {
+            "collectedBy": "Santa Ādamsone",
+            "testedBy": "Liāna Salmiņa",
+            "qualityControlledBy": "Vita Ščepetova"
+        },
+        "testGroups": [
+            {
+                "name": "Klīniskā ķīmija",
+                "tests": [
+                    {
+                        "name": "Kopējais holesterīns",
+                        "value": 5.82,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 5
+                        },
+                        "units": "mmol/L"
+                    },
+                    {
+                        "name": "ABL holesterīns",
+                        "value": 1.71,
+                        "referenceInterval": {
+                            "minValue": 1.2,
+                            "maxValue": 999
+                        },
+                        "units": "mmol/L"
+                    },
+                    {
+                        "name": "ZBL holesterīns",
+                        "value": 3.26,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 3
+                        },
+                        "units": "mmol/L"
+                    },
+                    {
+                        "name": "Ne-ABL holesterīns",
+                        "value": 4.11,
+                        "units": "mmol/L"
+                    }
+                ]
+            },
+            {
+                "name": "Asinsgrupa",
+                "tests": [
+                    {
+                        "name": "Asins grupa",
+                        "value": "A, rēzus faktors +"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "patient": {
+            "name": "Andris Sprūds",
+            "sex": "male",
+            "dateOfBirth": "1978-09-21",
+            "personalId": "210978-12311"
+        },
+        "laboratory": {
+            name: "E. Gulbja Laboratorija",
+            address: "Zemitāna laukums 13, Rīga, LV 1006"
+        },
+        "doctor": {
+            "name": "Dr. Inga Žīgure",
+            "clinic": "Veselības centrs 4"
+        },
+        "material": {
+            "dateTested": "2014-09-17T11:26:00Z",
+            "type": "blood"
+        },
+        "technicians": {
+            "collectedBy": "Santa Ādamsone",
+            "testedBy": "Liāna Salmiņa",
+            "qualityControlledBy": "Dace Jupatova"
+        },
+        "testGroups": [
+            {
+                "name": "Hematoloģija",
+                "tests": [
+                    {
+                        "name": "Eritrocīti",
+                        "value": 5.93,
+                        "units": "10x12/L",
+                        "referenceInterval": {
+                            "minValue": 4.5,
+                            "maxValue": 5.9
+                        }
+                    },
+                    {
+                        "name": "Hemoglobīns",
+                        "value": 172,
+                        "units": "g/L",
+                        "referenceInterval": {
+                            "minValue": 132,
+                            "maxValue": 175
+                        }
+                    },
+                    {
+                        "name": "Hematokrīts",
+                        "value": 52,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 40,
+                            "maxValue": 51
+                        }
+                    },
+                    {
+                        "name": "MCV- vid. Er tilpums",
+                        "value": 87,
+                        "units": "fL",
+                        "referenceInterval": {
+                            "minValue": 80,
+                            "maxValue": 100
+                        }
+                    },
+                    {
+                        "name": "MCH-vidējā Hb konc.",
+                        "value": 29,
+                        "units": "pg",
+                        "referenceInterval": {
+                            "minValue": 27,
+                            "maxValue": 33
+                        }
+                    },
+                    {
+                        "name": "MCH-vidējā Hb konc. Er",
+                        "value": 333,
+                        "units": "g/L",
+                        "referenceInterval": {
+                            "minValue": 315,
+                            "maxValue": 360
+                        }
+                    },
+                    {
+                        "name": "RDW -Er. sadalījums",
+                        "value": 14.2,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 11.5,
+                            "maxValue": 15.5
+                        }
+                    },
+                    {
+                        "name": "Trombocīti",
+                        "value": 240,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 150,
+                            "maxValue": 410
+                        }
+                    },
+                    {
+                        "name": "Leikocīti",
+                        "value": 6.57,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 4.0,
+                            "maxValue": 9.8
+                        }
+                    },
+                    {
+                        "name": "EGĀ (kapilārās fotometrijas metode)",
+                        "value": 2,
+                        "units": "mm/h",
+                        "referenceInterval": {
+                            "minValue": 1,
+                            "maxValue": 15
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Leikocītu diferencēts skaits",
+                "tests": [
+                    {
+                        "name": "Neitrofīlie %",
+                        "value": 45.6,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 48,
+                            "maxValue": 72
+                        }
+                    },
+                    {
+                        "name": "Neitrofīlie abs.",
+                        "value": 3,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 1.92,
+                            "maxValue": 8.00
+                        }
+                    },
+                    {
+                        "name": "Eozinofīlie %",
+                        "value": 1.4,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 0.3,
+                            "maxValue": 5.4
+                        }
+                    },
+                    {
+                        "name": "Eozinofīlie abs.",
+                        "value": 0.09,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.02,
+                            "maxValue": 0.53
+                        }
+                    },
+                    {
+                        "name": "Bazofīlie %",
+                        "value": 0.8,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 2.0
+                        }
+                    },
+                    {
+                        "name": "Bazofīlie abs.",
+                        "value": 0.05,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.00,
+                            "maxValue": 0.20
+                        }
+                    },
+                    {
+                        "name": "Limfocīti %",
+                        "value": 43.5,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 18.0,
+                            "maxValue": 42.0
+                        }
+                    },
+                    {
+                        "name": "Limfocīti abs.",
+                        "value": 2.86,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.72,
+                            "maxValue": 4.00
+                        }
+                    },
+                    {
+                        "name": "Monocīti %",
+                        "value": 8.7,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 2.0,
+                            "maxValue": 11.0
+                        }
+                    },
+                    {
+                        "name": "Monocīti abs.",
+                        "value": 0.57,
+                        "units": "10x9/L",
+                        "referenceInterval": {
+                            "minValue": 0.08,
+                            "maxValue": 1.21
+                        }
+                    },
+                    {
+                        "name": "EGĀ (Kapilārās fotometrijas metode)",
+                        "value": 2,
+                        "units": "mm/h",
+                        "referenceInterval": {
+                            "minValue": 1,
+                            "maxValue": 15
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Klīniskā ķīmija",
+                "tests": [
+                    {
+                        "name": "Urea",
+                        "value": 4,
+                        "referenceInterval": {
+                            "minValue": 1.7,
+                            "maxValue": 8.3
+                        },
+                        "units": "mmol/L"
+                    },
+                    {
+                        "name": "Imūnglobulīns A",
+                        "value": 409,
+                        "referenceInterval": {
+                            "minValue": 40,
+                            "maxValue": 400
+                        },
+                        "units": "mg/dL"
+                    },
+                    {
+                        "name": "Imūnglobulīns G",
+                        "value": 1134,
+                        "referenceInterval": {
+                            "minValue": 800,
+                            "maxValue": 1800
+                        },
+                        "units": "mg/dL"
+                    },
+                    {
+                        "name": "Imūnglobulīns M",
+                        "value": 116,
+                        "referenceInterval": {
+                            "minValue": 40,
+                            "maxValue": 230
+                        },
+                        "units": "mg/dL"
+                    },
+                    {
+                        "name": "ALAT",
+                        "value": 30,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 37
+                        },
+                        "units": "U/L"
+                    },
+                    {
+                        "name": "ASAT",
+                        "value": 28,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 41
+                        },
+                        "units": "U/L"
+                    }
+                ]
+            },
+            {
+                "name": "Iekaisuma marķieri, autoantivielas",
+                "tests": [
+                    {
+                        "name": "CRO",
+                        "value": 0.5,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 8
+                        },
+                        "units": "mg/L"
+                    }
+                ]
+            },
+            {
+                "name": "Celiakijas diagnostika",
+                "tests": [
+                    {
+                        "name": "Transglutamināzes IgA",
+                        "value": 1.2,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 10
+                        },
+                        "units": "mg/L"
+                    },
+                    {
+                        "name": "Transglutamināzes IgG",
+                        "value": 1.4,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 10
+                        },
+                        "units": "mg/L"
+                    },
+                    {
+                        "name": "DGP IgA",
+                        "value": 2.7,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 10
+                        },
+                        "units": "mg/L"
+                    },
+                    {
+                        "name": "DGP IgG",
+                        "value": 2.4,
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 10
+                        },
+                        "units": "mg/L"
                     }
                 ]
             }

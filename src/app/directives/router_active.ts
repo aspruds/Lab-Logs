@@ -32,33 +32,6 @@ export class RouterActive {
             let active = routerLink.first.isRouteActive;
             renderer.setElementClass(element, this._attrOrProp(), active);
         });
-
-        if(router.parent != null) {
-            router.parent.subscribe((url) => {
-                let routerLinkURL = routerLink.first.visibleHref;
-                let routerURL = '/' + url;
-                let active = routerLinkURL == routerURL;
-                renderer.setElementClass(element, this._attrOrProp(), active);
-            });
-        }
-
-        if(router.parent != null && router.parent.parent != null) {
-            router.parent.parent.subscribe((url) => {
-                let routerLinkURL = routerLink.first.visibleHref;
-                let routerURL = '/' + url;
-                let active = routerLinkURL == routerURL;
-                renderer.setElementClass(element, this._attrOrProp(), active);
-            });
-        }
-
-        if(router.parent != null && router.parent.parent != null && router.parent.parent.parent != null) {
-            router.parent.parent.parent.subscribe((url) => {
-                let routerLinkURL = routerLink.first.visibleHref;
-                let routerURL = '/' + url;
-                let active = routerLinkURL == routerURL;
-                renderer.setElementClass(element, this._attrOrProp(), active);
-            });
-        }
     }
     private _attrOrProp() {
         return isPresent(this.routerActive) ? this.routerActive : this.routerActiveAttr;

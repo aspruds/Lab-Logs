@@ -6,7 +6,7 @@
         <li class="active" *ngIf="visit">{{visit.material.dateTested.substring(0,10)}}</li>
     </ol>
     <div class="row">
-        <lab-menu></lab-menu>
+        <lab-menu selected="/LabVisits"></lab-menu>
         <div class="col-md-9">
             <h2>Apmeklējuma detaļas</h2>
             <div *ngIf="visit" class="visit">
@@ -28,16 +28,31 @@
                                 <table class="table details table-condensed">
                                     <thead>
                                     <tr>
-                                        <th colspan="2"><h3>Laboratorija</h3></th>
+                                        <th colspan="2"><h3>Materiāls</h3></th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td>Vārds</td>
+                                        <th>Datums</th>
+                                        <td>{{visit.material.dateTested}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Materiāla veids</th>
+                                        <td><span class="label label-danger">{{visit.material.type}}</span></td>
+                                    </tr>
+                                    </tbody>
+                                    <thead>
+                                    <tr>
+                                        <th colspan="2"><h3 class="following">Laboratorija</h3></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>Vārds</th>
                                         <td>{{visit.laboratory.name}}</td>
                                     </tr>
                                     <tr>
-                                        <td>Adrese</td>
+                                        <th>Adrese</th>
                                         <td>{{visit.laboratory.address}}</td>
                                     </tr>
                                     </tbody>
@@ -48,11 +63,11 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td>Vārds</td>
+                                        <th>Vārds</th>
                                         <td>{{visit.doctor.name}}</td>
                                     </tr>
                                     <tr>
-                                        <td>Ārstniecības iestāde</td>
+                                        <th>Ārstniecības iestāde</th>
                                         <td>{{visit.doctor.clinic}}</td>
                                     </tr>
                                     </tbody>
@@ -63,35 +78,20 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td>Vārds</td>
+                                        <th>Vārds</th>
                                         <td>{{visit.patient.name}}</td>
                                     </tr>
                                     <tr>
-                                        <td>Dzimums</td>
+                                        <th>Dzimums</th>
                                         <td>{{visit.patient.sex}}</td>
                                     </tr>
                                     <tr>
-                                        <td>Dzimšanas datums</td>
+                                        <th>Dzimšanas datums</th>
                                         <td>{{visit.patient.dateOfBirth}}</td>
                                     </tr>
                                     <tr>
-                                        <td>Personas kods</td>
+                                        <th>Personas kods</th>
                                         <td>{{visit.patient.personalId}}</td>
-                                    </tr>
-                                    </tbody>
-                                    <thead>
-                                    <tr>
-                                        <th colspan="2"><h3 class="following">Materiāls</h3></th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Datums</td>
-                                        <td>{{visit.material.dateTested}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Materiāla veids</td>
-                                        <td><span class="label label-danger">{{visit.material.type}}</span></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -111,20 +111,18 @@
                                 </tr>
                                 <tr>
                                     <th>Tests</th>
-                                    <th>Datums</th>
                                     <th>Rezultāts</th>
                                     <th *ngIf="group.hasLevels">Līmenis</th>
-                                    <th *ngIf="group.hasLevels === undefined">References intervāls</th>
+                                    <th *ngIf="!group.hasLevels">References intervāls</th>
                                     <th>Vienības</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr *ngFor="#test of group.tests">
+                                <tr *ngFor="#test of group.tests" [class]="highlightClass(test)">
                                     <td>{{test.name}}</td>
-                                    <td>{{test.dateTested}}</td>
                                     <td>{{test.value}}</td>
                                     <td *ngIf="group.hasLevels && test.level !== undefined">{{test.level}}</td>
-                                    <td *ngIf="group.hasLevels === undefined">
+                                    <td *ngIf="!group.hasLevels">
                                         <span *ngIf="test.referenceInterval">
                                             {{test.referenceInterval.minValue}} - {{test.referenceInterval.maxValue}}
                                         </span>

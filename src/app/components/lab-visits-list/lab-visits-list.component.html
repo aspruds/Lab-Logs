@@ -5,7 +5,7 @@
         <li class="active">Apmeklējumi</li>
     </ol>
     <div class="row">
-        <lab-menu></lab-menu>
+        <lab-menu selected="/LabVisits"></lab-menu>
         <div class="col-md-9">
             <table class="visits table" *ngIf="visits">
                 <thead>
@@ -16,8 +16,8 @@
                 </thead>
                 <tbody>
                 <tr *ngFor="#visit of visits">
-                    <td class="text-nowrap"><a [routerLink]="['Details', {id: visit.id}]">{{visit.material.dateTested.substr(0,10)}}</a></td>
-                    <td>
+                    <td class="text-nowrap"><a [routerLink]="['Details', {id: visit.id}]"><span>{{visit.material.dateTested.substr(0,10)}}</span></a></td>
+                    <td class="visits-list">
                         <template ngFor #test [ngForOf]="visit.testGroups">
                             <span class="label label-primary">{{test.name}}</span>&nbsp;
                         </template>

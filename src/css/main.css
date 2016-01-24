@@ -9,3 +9,5 @@ h1 {
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
 }
+
+.my-app div.loading {margin: 1em;}

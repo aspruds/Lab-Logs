@@ -24,10 +24,22 @@
 }
 
 .lab-visit-details div.visit h3.following {
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 .lab-visit-details div.return-link {
     margin-bottom: 3em;
+}
+
+.lab-visit-details tr.highlight-level-1 {
+    background-color: rgb(252, 246, 182);
+}
+
+.lab-visit-details tr.highlight-level-2 {
+    background-color: rgb(252, 227, 100);
+}
+
+.lab-visit-details tr.highlight-level-3 {
+    background-color: rgb(252, 194, 0);
 }
 

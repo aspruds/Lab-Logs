@@ -2,3 +2,5 @@ table.visits thead {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1.2em;
 }
+
+table.visits td.visits-list {font-size: 1.1em;}

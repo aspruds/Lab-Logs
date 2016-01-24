@@ -2,6 +2,7 @@ import {Component} from 'angular2/core'
 import {RouterActive} from "../../directives/router_active";
 import {ROUTER_DIRECTIVES} from "angular2/router";
 import {Router} from 'angular2/router'
+import {Attribute} from "angular2/core";
 
 @Component({
     selector: 'lab-menu',
@@ -9,6 +10,12 @@ import {Router} from 'angular2/router'
     templateUrl: 'app/components/lab-menu/lab-menu.component.html'
 })
 export class LabMenuComponent {
-    constructor(private router: Router) {
+    constructor(private router: Router,
+                @Attribute('selected') private selected: string) {
+    }
+
+    isSelected(route: string) {
+        let active = this.selected == route;
+        return active;
     }
 }

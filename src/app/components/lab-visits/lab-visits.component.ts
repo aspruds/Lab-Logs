@@ -12,7 +12,7 @@ import {RouteConfig} from "angular2/router";
 @Component({
     selector: 'lab-visits',
     directives: [ROUTER_DIRECTIVES, LabMenuComponent],
-    templateUrl: 'app/components/lab-visits/lab-visits.component.html'
+    template: '<router-outlet></router-outlet>'
 })
 @RouteConfig([
     {path: 'list', component: LabVisitsListComponent, as: "List", useAsDefault: true},

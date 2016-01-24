@@ -5,7 +5,7 @@
         <li class="active">Rezultāti</li>
     </ol>
     <div class="row">
-        <lab-menu></lab-menu>
+        <lab-menu selected="/LabResults"></lab-menu>
         <div class="col-md-9">
             <table class="table results" *ngIf="results">
                 <template ngFor #group [ngForOf]="results.testGroups" #idx="index">

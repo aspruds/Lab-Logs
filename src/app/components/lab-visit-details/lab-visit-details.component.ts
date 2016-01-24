@@ -6,6 +6,7 @@ import {LabVisit} from "../../models/lab-visits/lab-visit";
 import {LabVisitsService} from "../../services/lab-visits.service";
 import {Router} from 'angular2/router'
 import {RouteParams} from "angular2/router";
+import {Test} from "../../models/lab-visits/test";
 
 @Component({
     selector: 'lab-tests',
@@ -38,5 +39,39 @@ export class LabVisitDetailsComponent implements OnInit {
 
     goBack() {
         window.history.back();
+    }
+
+    highlightClass(test: Test) {
+        let cssClass = null;
+
+        // for tests with levels
+        if(test.level != null) {
+            let level = test.level;
+
+            if (level > 0 && level <= 1) {
+                cssClass = "highlight-level-1";
+            }
+            else if (level > 1 && level <= 2) {
+                cssClass = "highlight-level-2";
+            }
+            else if (level > 2) {
+                cssClass = "highlight-level-3";
+            }
+        }
+
+        // for tests with reference values
+        else if(test.referenceValue != null && test.value != test.referenceValue) {
+            cssClass = "highlight-level-3";
+        }
+
+        // for tests with reference intervals
+        else if(test.referenceInterval != null) {
+            let refInt = test.referenceInterval;
+            if(test.value > refInt.maxValue || test.value < refInt.minValue) {
+                cssClass = "highlight-level-2";
+            }
+        }
+
+        return cssClass;
     }
 }
