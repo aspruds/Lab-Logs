@@ -17,8 +17,8 @@ export var LAB_VISITS: LabVisit[] = [
             "personalId": "210978-12311"
         },
         "laboratory": {
-            name: "E. Gulbja Laboratorija",
-            address: "Zemitāna laukums 13, Rīga, LV 1006"
+            name: "SIA \"BioCon\" laboratorija",
+            address: "Grebenščikova iela 1, LV-1003, telefons 20366553"
         },
         "doctor": {
             "name": "Dr. Kristīne Cīrule",

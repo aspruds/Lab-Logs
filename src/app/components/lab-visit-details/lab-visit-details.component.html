@@ -55,6 +55,18 @@
                                         <th>Adrese</th>
                                         <td>{{visit.laboratory.address}}</td>
                                     </tr>
+                                    <tr *ngIf="visit.technicians.collectedBy != null">
+                                        <th>Pieņēma</th>
+                                        <td>{{visit.technicians.collectedBy}}</td>
+                                    </tr>
+                                    <tr *ngIf="visit.technicians.testedBy != null">
+                                        <th>Testēja</th>
+                                        <td>{{visit.technicians.testedBy}}</td>
+                                    </tr>
+                                    <tr *ngIf="visit.technicians.qualityControlledBy != null">
+                                        <th>Pārbaudīja</th>
+                                        <td>{{visit.technicians.qualityControlledBy}}</td>
+                                    </tr>
                                     </tbody>
                                     <thead>
                                     <tr>
