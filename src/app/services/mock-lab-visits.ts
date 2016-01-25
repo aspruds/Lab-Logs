@@ -755,6 +755,196 @@ export var LAB_VISITS: LabVisit[] = [
         },
         "testGroups": [
             {
+                "name": "Hematoloģija",
+                "tests": [
+                    {
+                        "name": "RBC Eritrocīti",
+                        "value": 5.66,
+                        "units": "10e6/mkL",
+                        "referenceInterval": {
+                            "minValue": 4.20,
+                            "maxValue": 5.90
+                        }
+                    },
+                    {
+                        "name": "Hgb Hemoglobīns",
+                        "value": 16.20,
+                        "units": "g/dL",
+                        "referenceInterval": {
+                            "minValue": 13.20,
+                            "maxValue": 17.50
+                        }
+                    },
+                    {
+                        "name": "Hct Hematokrīts",
+                        "value": 48.6,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 39.0,
+                            "maxValue": 51.0
+                        }
+                    },
+                    {
+                        "name": "MCV Eritrocītu vidējais tilpums",
+                        "value": 85.90,
+                        "units": "fL",
+                        "referenceInterval": {
+                            "minValue": 80,
+                            "maxValue": 100
+                        }
+                    },
+                    {
+                        "name": "MCH Vidēja Hb saturs eritrocīta",
+                        "value": 28.60,
+                        "units": "pg",
+                        "referenceInterval": {
+                            "minValue": 27.50,
+                            "maxValue": 34.00
+                        }
+                    },
+                    {
+                        "name": "MCHC Vidējā Hb koncentrācija eritr.",
+                        "value": 33.30,
+                        "units": "g/dL",
+                        "referenceInterval": {
+                            "minValue": 31.50,
+                            "maxValue": 37.50
+                        }
+                    },
+                    {
+                        "name": "RDW Eritrocītu anizocitoze",
+                        "value": 11.5,
+                        "units": "g/dL",
+                        "referenceInterval": {
+                            "minValue": 11.0,
+                            "maxValue": 15.5
+                        }
+                    },
+                    {
+                        "name": "Plt Trombocīti",
+                        "value": 243,
+                        "units": "10e3/mkL",
+                        "referenceInterval": {
+                            "minValue": 150,
+                            "maxValue": 400
+                        }
+                    },
+                    {
+                        "name": "EGĀ (Er. mikrosed. fotometrija)",
+                        "value": 2,
+                        "units": "mm/st",
+                        "referenceInterval": {
+                            "minValue": 2,
+                            "maxValue": 15
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Leikocītu diferencēts skaits",
+                "tests": [
+                    {
+                        "name": "WBC Leikocīti",
+                        "value": 5.70,
+                        "units": "10e3/mkL",
+                        "referenceInterval": {
+                            "minValue": 4.00,
+                            "maxValue": 9.80
+                        }
+                    },
+                    {
+                        "name": "NEU% Neitrofīlie leikocīti",
+                        "value": 59.6,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 42,
+                            "maxValue": 72
+                        }
+                    },
+                    {
+                        "name": "NEU# Neitrofīlie leikocīti(abs.sk.)",
+                        "value": 3.40,
+                        "units": "10e3/mkL",
+                        "referenceInterval": {
+                            "minValue": 1.40,
+                            "maxValue": 6.90
+                        }
+                    },
+                    {
+                        "name": "Lym% Limfocīti",
+                        "value": 34.7,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 20.0,
+                            "maxValue": 51.1
+                        }
+                    },
+                    {
+                        "name": "Lym# Limfocīti(abs.sk.)",
+                        "value": 2.00,
+                        "units": "10e3/mkL",
+                        "referenceInterval": {
+                            "minValue": 1.00,
+                            "maxValue": 3.40
+                        }
+                    },
+                    {
+                        "name": "Mon% Monocīti",
+                        "value": 4.30,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 2,
+                            "maxValue": 10
+                        }
+                    },
+                    {
+                        "name": "Mon# Monocīti(abs.sk.)",
+                        "value": 0.2,
+                        "units": "10e3/mkL",
+                        "referenceInterval": {
+                            "minValue": 0.1,
+                            "maxValue": 0.6
+                        }
+                    },
+                    {
+                        "name": "EOS% Eozinofīli",
+                        "value": 1.10,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 0.5,
+                            "maxValue": 5
+                        }
+                    },
+                    {
+                        "name": "EOS# Eozinofīli(abs.sk.)",
+                        "value": 0.1,
+                        "units": "10e3/mkL",
+                        "referenceInterval": {
+                            "minValue": 0.020,
+                            "maxValue": 0.5
+                        }
+                    },
+                    {
+                        "name": "BASO% Bazofīli",
+                        "value": 0.30,
+                        "units": "%",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 2.5
+                        }
+                    },
+                    {
+                        "name": "BASO Bazofīli(abs.sk.)",
+                        "value": 0,
+                        "units": "10e3/mkL",
+                        "referenceInterval": {
+                            "minValue": 0,
+                            "maxValue": 0.2
+                        }
+                    }
+                ]
+            },
+            {
                 "name": "Klīniskā ķīmija",
                 "tests": [
                     {
