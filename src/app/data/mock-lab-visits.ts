@@ -1,11 +1,11 @@
-import {LabVisit} from "./../models/lab-visits/lab-visit";
-import {Patient} from "./../models/lab-visits/patient";
-import {Laboratory} from "./../models/lab-visits/laboratory";
-import {Doctor} from "./../models/lab-visits/doctor";
-import {Material} from "./../models/lab-visits/material";
-import {Technicians} from "./../models/lab-visits/technicians";
-import {Test} from "./../models/lab-visits/test";
-import {ReferenceInterval} from "../models/lab-visits/reference-interval";
+import {LabVisit} from "app/models/lab-visits/lab-visit";
+import {Patient} from "app/models/lab-visits/patient";
+import {Laboratory} from "app/models/lab-visits/laboratory";
+import {Doctor} from "app/models/lab-visits/doctor";
+import {Material} from "app/models/lab-visits/material";
+import {Technicians} from "app/models/lab-visits/technicians";
+import {Test} from "app/models/lab-visits/test";
+import {ReferenceInterval} from "app/models/lab-visits/reference-interval";
 
 export var LAB_VISITS: LabVisit[] = [
     {

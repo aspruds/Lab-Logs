@@ -1,6 +1,6 @@
-import {LAB_RESULTS} from './../data/mock-lab-results'
+import {LAB_RESULTS} from 'app/data/mock-lab-results'
 import {Injectable} from 'angular2/core'
-import {LabResults} from "../models/lab-results/lab-results";
+import {LabResults} from "app/models/lab-results/lab-results";
 
 @Injectable()
 export class LabResultsService {

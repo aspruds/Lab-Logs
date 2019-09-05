@@ -1,12 +1,12 @@
 import {Component,OnInit} from 'angular2/core'
-import {LabMenuComponent} from "../lab-menu/lab-menu.component";
-import {RouterActive} from "../../directives/router_active";
+import {LabMenuComponent} from "app/components/lab-menu/lab-menu.component";
+import {RouterActive} from "app/directives/router_active";
 import {ROUTER_DIRECTIVES} from "angular2/router";
-import {LabVisit} from "../../models/lab-visits/lab-visit";
-import {LabVisitsService} from "../../services/lab-visits.service";
+import {LabVisit} from "app/models/lab-visits/lab-visit";
+import {LabVisitsService} from "app/services/lab-visits.service";
 import {Router} from 'angular2/router'
 import {RouteParams} from "angular2/router";
-import {Test} from "../../models/lab-visits/test";
+import {Test} from "app/models/lab-visits/test";
 
 @Component({
     selector: 'lab-tests',

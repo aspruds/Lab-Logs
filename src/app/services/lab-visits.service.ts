@@ -1,6 +1,6 @@
-import {LAB_VISITS} from './../data/mock-lab-visits'
+import {LAB_VISITS} from 'app/data/mock-lab-visits'
 import {Injectable} from 'angular2/core'
-import {LabVisit} from "../models/lab-visits/lab-visit";
+import {LabVisit} from "app/models/lab-visits/lab-visit";
 
 @Injectable()
 export class LabVisitsService {

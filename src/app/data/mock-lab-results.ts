@@ -1,8 +1,8 @@
-import {LabResults} from "../models/lab-results/lab-results";
-import {TestGroup} from "../models/lab-results/test-group";
-import {TestWithHistory} from "../models/lab-results/test-with-history";
-import {Test} from "../models/lab-results/test";
-import {ReferenceInterval} from "../models/lab-visits/reference-interval";
+import {LabResults} from "app/models/lab-results/lab-results";
+import {TestGroup} from "app/models/lab-results/test-group";
+import {TestWithHistory} from "app/models/lab-results/test-with-history";
+import {Test} from "app/models/lab-results/test";
+import {ReferenceInterval} from "app/models/lab-visits/reference-interval";
 import {LAB_VISITS} from "./mock-lab-visits"
 
 let firstLabVisits = LAB_VISITS[0];

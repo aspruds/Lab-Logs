@@ -1,4 +1,4 @@
-import {ReferenceInterval} from "../lab-visits/reference-interval";
+import {ReferenceInterval} from "app/models/lab-visits/reference-interval";
 export interface Test {
     name: string;
     date: string;

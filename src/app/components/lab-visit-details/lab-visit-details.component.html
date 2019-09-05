@@ -113,39 +113,37 @@
                 </div>
                 <div class="row results">
                     <div class="col-md-12">
-                        <table class="table results">
-                            <template ngFor #group [ngForOf]="visit.testGroups" #idx="index">
-                                <thead>
-                                <tr>
-                                    <td colspan="5">
-                                        <h3 [class.following]="idx > 0">{{group.name}}</h3>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Tests</th>
-                                    <th>Rezultāts</th>
-                                    <th *ngIf="group.hasLevels">Līmenis</th>
-                                    <th *ngIf="!group.hasLevels">References intervāls</th>
-                                    <th>Vienības</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr *ngFor="#test of group.tests" [class]="highlightClass(test)">
-                                    <td>{{test.name}}</td>
-                                    <td>{{test.value}}</td>
-                                    <td *ngIf="group.hasLevels && test.level !== undefined">{{test.level}}</td>
-                                    <td *ngIf="!group.hasLevels">
-                                        <span *ngIf="test.referenceInterval">
-                                            {{test.referenceInterval.minValue}} - {{test.referenceInterval.maxValue}}
-                                        </span>
-                                        <span *ngIf="test.referenceValue !== undefined">
-                                            {{test.referenceValue}}
-                                        </span>
-                                    </td>
-                                    <td>{{test.units}}</td>
-                                </tr>
-                                </tbody>
-                            </template>
+                        <table class="table results" *ngFor="let group of visit.testGroups; let idx = index">
+                            <thead>
+                            <tr>
+                                <td colspan="5">
+                                    <h3 [class.following]="idx > 0">{{group.name}}</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Tests</th>
+                                <th>Rezultāts</th>
+                                <th *ngIf="group.hasLevels">Līmenis</th>
+                                <th *ngIf="!group.hasLevels">References intervāls</th>
+                                <th>Vienības</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr *ngFor="let test of group.tests" [class]="highlightClass(test)">
+                                <td>{{test.name}}</td>
+                                <td>{{test.value}}</td>
+                                <td *ngIf="group.hasLevels && test.level !== undefined">{{test.level}}</td>
+                                <td *ngIf="!group.hasLevels">
+                                    <span *ngIf="test.referenceInterval">
+                                        {{test.referenceInterval.minValue}} - {{test.referenceInterval.maxValue}}
+                                    </span>
+                                    <span *ngIf="test.referenceValue !== undefined">
+                                        {{test.referenceValue}}
+                                    </span>
+                                </td>
+                                <td>{{test.units}}</td>
+                            </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>

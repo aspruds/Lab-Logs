@@ -1,8 +1,8 @@
 import {Component,OnInit} from 'angular2/core'
-import {LabMenuComponent} from "../lab-menu/lab-menu.component";
-import {RouterActive} from "../../directives/router_active";
-import {LabResults} from "../../models/lab-results/lab-results";
-import {LabResultsService} from "../../services/lab-results.service";
+import {LabMenuComponent} from "app/components/lab-menu/lab-menu.component";
+import {RouterActive} from "app/directives/router_active";
+import {LabResults} from "app/models/lab-results/lab-results";
+import {LabResultsService} from "app/services/lab-results.service";
 import {ROUTER_DIRECTIVES} from "angular2/router";
 import {Router} from 'angular2/router'
 

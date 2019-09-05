@@ -1,4 +1,4 @@
-import {TestCategory} from "../models/lab-tests/category";
+import {TestCategory} from "app/models/lab-tests/category";
 
 export var LAB_TEST_CATEGORIES: TestCategory[] = [
     {

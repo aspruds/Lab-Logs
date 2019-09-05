@@ -15,12 +15,12 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr *ngFor="#visit of visits">
+                <tr *ngFor="let visit of visits">
                     <td class="text-nowrap"><a [routerLink]="['Details', {id: visit.id}]"><span>{{visit.material.dateTested.substr(0,10)}}</span></a></td>
                     <td class="visits-list">
-                        <template ngFor #test [ngForOf]="visit.testGroups">
+                        <container *ngFor="let test of visit.testGroups">
                             <span class="label label-primary">{{test.name}}</span>&nbsp;
-                        </template>
+                        </container>
                     </td>
                 </tr>
                 </tbody>

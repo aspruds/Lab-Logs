@@ -30,7 +30,7 @@ export class RouterActive {
 
         router.subscribe(() => {
             let active = routerLink.first.isRouteActive;
-            renderer.setElementClass(element, this._attrOrProp(), active);
+            //renderer.setElementClass(element, this._attrOrProp(), active);
         });
     }
     private _attrOrProp() {

@@ -7,8 +7,8 @@
     <div class="row">
         <lab-menu selected="/LabResults"></lab-menu>
         <div class="col-md-9">
-            <table class="table results" *ngIf="results">
-                <template ngFor #group [ngForOf]="results.testGroups" #idx="index">
+            <div *ngIf="results">
+                <table class="table results" *ngFor="let group of results.testGroups; let idx = index">
                     <thead>
                     <tr>
                         <td colspan="5">
@@ -25,24 +25,24 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr *ngFor="#test of group.tests">
+                    <tr *ngFor="let test of group.tests">
                         <td>{{test.lastValue.name}}</td>
                         <td>{{test.lastValue.date}}</td>
                         <td>{{test.lastValue.value}}</td>
                         <td *ngIf="group.hasLevels && test.lastValue.level !== undefined">{{test.lastValue.level}}</td>
                         <td *ngIf="group.hasLevels === undefined">
-                            <span *ngIf="test.lastValue.referenceInterval">
-                                {{test.lastValue.referenceInterval.minValue}} - {{test.lastValue.referenceInterval.maxValue}}
-                            </span>
+                        <span *ngIf="test.lastValue.referenceInterval">
+                            {{test.lastValue.referenceInterval.minValue}} - {{test.lastValue.referenceInterval.maxValue}}
+                        </span>
                             <span *ngIf="test.lastValue.referenceValue !== undefined">
-                                {{test.lastValue.referenceValue}}
-                            </span>
+                            {{test.lastValue.referenceValue}}
+                        </span>
                         </td>
                         <td>{{test.lastValue.units}}</td>
                     </tr>
                     </tbody>
-                </template>
-            </table>
+                </table>
+            </div>
         </div>
     </div>
 </div>

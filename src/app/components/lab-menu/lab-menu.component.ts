@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core'
-import {RouterActive} from "../../directives/router_active";
+import {RouterActive} from "app/directives/router_active";
 import {ROUTER_DIRECTIVES} from "angular2/router";
 import {Router} from 'angular2/router'
 import {Attribute} from "angular2/core";
