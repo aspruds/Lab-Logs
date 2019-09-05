@@ -1,6 +1,5 @@
 import {Component,OnInit} from 'angular2/core'
 import {LabMenuComponent} from "app/components/lab-menu/lab-menu.component";
-import {RouterActive} from "app/directives/router_active";
 import {ROUTER_DIRECTIVES} from "angular2/router";
 import {LabVisit} from "app/models/lab-visits/lab-visit";
 import {LabVisitsService} from "app/services/lab-visits.service";
